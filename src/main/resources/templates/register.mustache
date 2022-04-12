@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<H1> Регистрация </h1>
+<hr>
+<form action="/register/post" name="user" method="post" enctype="multipart/form-data">
+    <table class="centertable">
+        <tr>
+            <td class="td1"> Имя пользователя:</td>
+            <td class="td2"><input class="text1" type="text" name="userName"/></td>
+        </tr>
+        <tr>
+            <td class="td4">E_mail:</td>
+            <td class="td3"><input class="text1" type="text" name="email"/></td>
+        </tr>
+        <tr>
+            <td class="td1"> Пароль:</td>
+            <td class="td2"><input class="text1" type="password"
+                                   name="password"/></td>
+        </tr>
+
+        <tr>
+            <td class="td1"> Подтвердите пароль:</td>
+            <td class="td2"><input class="text1" type="password"
+                                   name="confirmPassword"/></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button type="submit">Create</button>
+    <!--                <input class="button" type="button" onclick="javascript: history.back (-1);" value="return"/>-->
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
