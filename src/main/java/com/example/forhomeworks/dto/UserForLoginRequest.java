@@ -1,5 +1,4 @@
 package com.example.forhomeworks.dto;
-
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
@@ -8,12 +7,9 @@ import lombok.experimental.FieldDefaults;
 @Getter
 @Setter
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class UserRequest {
-    String userName;
-
-    String email;
+public class UserForLoginRequest {
+    String emailOrUserName;
 
     String password;
 
-    Long sentNumByEmail;
 }
