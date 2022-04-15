@@ -23,7 +23,7 @@ public class Ticket {
     /**
      * @noinspection JpaAttributeTypeInspection
      */
-    @OneToMany
+    @ManyToOne
     @JoinColumn(name = "booking_ref",nullable = false)
     Booking booking;
 

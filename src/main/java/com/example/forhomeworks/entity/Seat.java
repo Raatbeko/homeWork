@@ -22,7 +22,7 @@ public class Seat {
     /**
      * @noinspection JpaAttributeTypeInspection
      */
-    @OneToMany
+    @ManyToOne
     @JoinColumn(name = "aircraft_code", nullable = false)
     Aircraft aircraft;
 

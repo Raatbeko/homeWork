@@ -22,14 +22,14 @@ public class TicketFlight {
     /**
      * @noinspection JpaAttributeTypeInspection
      */
-    @OneToMany
+    @ManyToOne
     @JoinColumn(name = "flight_id")
     Flight flight;
 
     /**
      * @noinspection JpaAttributeTypeInspection
      */
-    @OneToMany
+    @ManyToOne
     @JoinColumn(name = "ticket_id")
     Ticket ticket;
 

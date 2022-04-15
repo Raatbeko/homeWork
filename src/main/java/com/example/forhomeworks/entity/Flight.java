@@ -33,14 +33,14 @@ public class Flight {
     /**
      * @noinspection JpaAttributeTypeInspection
      */
-    @OneToMany
+    @ManyToOne
     @JoinColumn(name = "arrival_airport",nullable = false)
     Airport arrivalAirport;
 
     /**
      * @noinspection JpaAttributeTypeInspection
      */
-    @OneToMany
+    @ManyToOne
     @JoinColumn(name = "departure_airport",nullable = false)
     Airport departureAirport;
 
@@ -51,7 +51,7 @@ public class Flight {
     /**
      * @noinspection JpaAttributeTypeInspection
      */
-    @OneToMany
+    @ManyToOne
     @JoinColumn(name = "aircraft_code",nullable = false)
     Aircraft aircraft;
 

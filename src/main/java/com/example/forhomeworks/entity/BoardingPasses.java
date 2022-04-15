@@ -22,7 +22,7 @@ public class BoardingPasses {
     /**
      * @noinspection JpaAttributeTypeInspection
      */
-    @OneToMany
+    @ManyToOne
     @JoinColumn(name = "ticket_flgiht_id")
     TicketFlight ticketFlight;
 
